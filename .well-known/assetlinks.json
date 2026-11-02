@@ -1,0 +1,10 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.luiserh.diario",
+      "sha256_cert_fingerprints": ["E1:D6:0D:3F:29:F5:8B:3A:2D:38:F8:86:60:7D:D7:57:D5:7A:63:B5:13:6F:9D:0E:69:CB:88:42:00:AB:06:C5"]
+    }
+  }
+]

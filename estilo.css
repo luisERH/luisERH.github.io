@@ -1,0 +1,48 @@
+:root {
+  --bg: #f6f8f5; --ink: #16221b; --weak: #4a5a50; --line: #d6e0d8; --card: #ffffff;
+  --accent: #2f7d52; --accent-ink: #ffffff; --danger: #b3321f; --danger-soft: #fbeae6;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0a0f0d; --ink: #f1f6f3; --weak: #a9b9ae; --line: #25332a; --card: #131d17;
+    --accent: #86e3ac; --accent-ink: #06160d; --danger: #ff9a86; --danger-soft: #3a1c17;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+main { max-width: 46rem; margin: 0 auto; padding: 24px 16px 64px; }
+header.topo { max-width: 46rem; margin: 0 auto; padding: 20px 16px 0; display: flex; gap: 16px; flex-wrap: wrap; align-items: baseline; }
+header.topo a.marca { font-weight: 700; color: var(--ink); text-decoration: none; font-size: 1.15rem; }
+header.topo nav { display: flex; gap: 16px; flex-wrap: wrap; }
+a { color: var(--accent); }
+h1 { font-size: 1.9rem; line-height: 1.2; margin: 16px 0 4px; }
+h2 { font-size: 1.25rem; margin: 32px 0 8px; }
+p, li { color: var(--ink); }
+.meta { color: var(--weak); font-size: .9rem; margin-top: 0; }
+table { width: 100%; border-collapse: collapse; font-size: .92rem; margin: 12px 0; display: block; overflow-x: auto; }
+th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { color: var(--weak); font-weight: 600; white-space: nowrap; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 16px; margin: 16px 0; }
+.aviso { background: var(--danger-soft); border: 1px solid var(--danger); border-radius: 12px; padding: 12px 14px; }
+label { display: block; font-weight: 600; margin: 12px 0 4px; }
+input[type=email], input[type=password], input[type=text] {
+  width: 100%; padding: 12px; font-size: 1rem; border-radius: 12px; border: 1px solid var(--line);
+  background: var(--bg); color: var(--ink);
+}
+button {
+  font: inherit; font-weight: 600; padding: 12px 20px; border-radius: 999px; border: 0; cursor: pointer;
+  background: var(--accent); color: var(--accent-ink); margin-top: 16px; min-height: 48px;
+}
+button.perigo { background: var(--danger); color: var(--bg); }
+button[disabled] { opacity: .5; cursor: not-allowed; }
+.oculto { display: none; }
+footer { max-width: 46rem; margin: 0 auto; padding: 0 16px 40px; color: var(--weak); font-size: .9rem; }
+
+/* Convite por link (`/c/<código>`): a página cabe numa tela, com um botão principal. */
+main.convite { min-height: 100dvh; display: flex; flex-direction: column; justify-content: center; gap: 12px; }
+a.acao { display: block; padding: 14px 16px; border-radius: 999px; text-align: center; font-weight: 600; text-decoration: none; background: var(--accent); color: var(--accent-ink); }
+a.acao.secundaria { background: var(--card); color: var(--ink); border: 1px solid var(--line); }
