@@ -1,10 +1,16 @@
 [
   {
-    "relation": ["delegate_permission/common.handle_all_urls"],
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
     "target": {
       "namespace": "android_app",
       "package_name": "com.luiserh.diario",
-      "sha256_cert_fingerprints": ["E1:D6:0D:3F:29:F5:8B:3A:2D:38:F8:86:60:7D:D7:57:D5:7A:63:B5:13:6F:9D:0E:69:CB:88:42:00:AB:06:C5"]
+      "sha256_cert_fingerprints": [
+        "E1:D6:0D:3F:29:F5:8B:3A:2D:38:F8:86:60:7D:D7:57:D5:7A:63:B5:13:6F:9D:0E:69:CB:88:42:00:AB:06:C5",
+        "F2:31:FD:7A:11:1C:6F:CB:AF:54:2B:AF:FF:9F:5F:12:CC:37:CE:81:86:3A:92:0C:E6:2F:AE:A5:2C:F3:D9:B2",
+        "32:86:E2:55:4C:3D:0B:6B:12:A4:70:86:61:D7:A4:FD:22:B6:B4:C0:36:FF:4C:FA:FE:E4:F2:9E:20:FB:04:19"
+      ]
     }
   }
 ]
